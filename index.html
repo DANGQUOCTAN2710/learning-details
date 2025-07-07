@@ -6,13 +6,13 @@
     <title>Roadmap Fullstack + Cross-Platform Development</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Inter', sans-serif;
             line-height: 1.6;
@@ -20,7 +20,7 @@
             background-color: #f7fafc;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -29,34 +29,34 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             overflow: hidden;
         }
-        
+
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 40px;
             text-align: center;
         }
-        
+
         .header h1 {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 10px;
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
-        
+
         .header .subtitle {
             font-size: 1.2rem;
             opacity: 0.9;
         }
-        
+
         .content {
             padding: 40px;
         }
-        
+
         .overview {
             margin-bottom: 40px;
         }
-        
+
         .overview h2 {
             color: #2d3748;
             font-size: 1.8rem;
@@ -65,14 +65,14 @@
             align-items: center;
             gap: 10px;
         }
-        
+
         .tech-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin-bottom: 30px;
         }
-        
+
         .tech-card {
             background: #f8f9fa;
             border: 2px solid #e2e8f0;
@@ -80,12 +80,12 @@
             padding: 20px;
             transition: transform 0.2s;
         }
-        
+
         .tech-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
-        
+
         .tech-card h3 {
             color: #4a5568;
             font-size: 1.1rem;
@@ -94,29 +94,29 @@
             align-items: center;
             gap: 8px;
         }
-        
+
         .tech-card .tech-name {
             font-weight: 600;
             color: #2d3748;
         }
-        
+
         .tech-card .purpose {
             font-size: 0.9rem;
             color: #718096;
             margin-bottom: 5px;
         }
-        
+
         .tech-card .features {
             font-size: 0.85rem;
             color: #4a5568;
         }
-        
+
         .phase {
             margin-bottom: 40px;
             border-left: 4px solid #667eea;
             padding-left: 20px;
         }
-        
+
         .phase h2 {
             color: #2d3748;
             font-size: 1.6rem;
@@ -125,14 +125,14 @@
             align-items: center;
             gap: 10px;
         }
-        
+
         .month {
             margin-bottom: 30px;
             background: #f8f9fa;
             border-radius: 8px;
             padding: 20px;
         }
-        
+
         .month h3 {
             color: #4a5568;
             font-size: 1.3rem;
@@ -140,14 +140,14 @@
             border-bottom: 2px solid #e2e8f0;
             padding-bottom: 8px;
         }
-        
+
         .week-table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
             font-size: 0.9rem;
         }
-        
+
         .week-table th {
             background: #667eea;
             color: white;
@@ -155,17 +155,17 @@
             text-align: left;
             font-weight: 600;
         }
-        
+
         .week-table td {
             padding: 12px;
             border-bottom: 1px solid #e2e8f0;
             vertical-align: top;
         }
-        
+
         .week-table tr:nth-child(even) {
             background-color: #f7fafc;
         }
-        
+
         .milestone {
             background: linear-gradient(135deg, #48bb78, #38a169);
             color: white;
@@ -173,35 +173,35 @@
             border-radius: 8px;
             margin-top: 15px;
         }
-        
+
         .milestone h4 {
             margin-bottom: 8px;
             font-size: 1.1rem;
         }
-        
+
         .milestone ul {
             margin-left: 20px;
         }
-        
+
         .milestone li {
             margin-bottom: 5px;
         }
-        
+
         .architecture {
             margin-top: 40px;
         }
-        
+
         .architecture h2 {
             color: #2d3748;
             font-size: 1.8rem;
             margin-bottom: 20px;
             text-align: center;
         }
-        
+
         .layer {
             margin-bottom: 30px;
         }
-        
+
         .layer h3 {
             color: #4a5568;
             font-size: 1.4rem;
@@ -210,20 +210,20 @@
             background: #edf2f7;
             border-radius: 6px;
         }
-        
+
         .progress-section {
             margin-top: 40px;
             background: #f8f9fa;
             padding: 20px;
             border-radius: 8px;
         }
-        
+
         .progress-table {
             width: 100%;
             border-collapse: collapse;
             font-size: 0.9rem;
         }
-        
+
         .progress-table th {
             background: #2d3748;
             color: white;
@@ -231,47 +231,47 @@
             text-align: left;
             font-weight: 600;
         }
-        
+
         .progress-table td {
             padding: 12px;
             border-bottom: 1px solid #e2e8f0;
         }
-        
+
         .difficulty {
             display: flex;
             gap: 2px;
         }
-        
+
         .star {
             color: #f6ad55;
             font-size: 1.2em;
         }
-        
+
         .emoji {
             font-size: 1.2em;
             margin-right: 8px;
         }
-        
+
         @media print {
             body {
                 background: white;
                 padding: 0;
             }
-            
+
             .container {
                 box-shadow: none;
                 border-radius: 0;
             }
-            
+
             .tech-card:hover {
                 transform: none;
             }
-            
+
             .phase {
                 page-break-inside: avoid;
             }
         }
-        
+
         @page {
             margin: 2cm;
         }
@@ -283,7 +283,7 @@
             <h1>🚀 ROADMAP FULLSTACK + CROSS-PLATFORM</h1>
             <div class="subtitle">Chi tiết 12 tháng - Hệ sinh thái hoàn chỉnh</div>
         </div>
-        
+
         <div class="content">
             <div class="overview">
                 <h2><span class="emoji">🎯</span>TỔNG QUAN HỆ SINH THÁI</h2>
@@ -297,27 +297,27 @@
                     <div class="tech-card">
                         <h3><span class="emoji">📱</span>Mobile</h3>
                         <div class="tech-name">React Native cross-platform</div>
-                        <div class="purpose">Học tập di động</div>
+                        <div class="purpose">Phát triển ứng dụng di động</div>
                         <div class="features">iOS + Android đồng thời</div>
                     </div>
                     <div class="tech-card">
                         <h3><span class="emoji">💻</span>Desktop</h3>
                         <div class="tech-name">Electron + Java</div>
-                        <div class="purpose">Trường học offline</div>
+                        <div class="purpose">Ứng dụng offline</div>
                         <div class="features">Tính năng enterprise</div>
                     </div>
                     <div class="tech-card">
                         <h3><span class="emoji">🔥</span>API Backend</h3>
-                        <div class="tech-name">Java Spring Boot</div>
+                        <div class="tech-name">Node.js Express.js & Java Spring Boot</div>
                         <div class="purpose">Xử lý dữ liệu chính</div>
-                        <div class="features">Enterprise-grade, bảo mật</div>
+                        <div class="features">Enterprise-grade, bảo mật, hiệu năng cao</div>
                     </div>
                 </div>
             </div>
 
             <div class="phase">
                 <h2><span class="emoji">🌱</span>GIAI ĐOẠN 1: FRONTEND FOUNDATION (Tháng 1-2)</h2>
-                
+
                 <div class="month">
                     <h3>THÁNG 1: Web Fundamentals</h3>
                     <table class="week-table">
@@ -325,7 +325,7 @@
                             <tr>
                                 <th>Tuần</th>
                                 <th>Chủ đề</th>
-                                <th>Kỹ thuật học</th>
+                                <th>Kỹ thuật học & Tài nguyên</th>
                                 <th>Dự án</th>
                                 <th>Deliverable</th>
                             </tr>
@@ -334,16 +334,26 @@
                             <tr>
                                 <td>1-2</td>
                                 <td>HTML/CSS/JS Mastery</td>
-                                <td>• HTML5 semantic elements, accessibility<br>• CSS3 flexbox, grid, animations<br>• JavaScript ES6+: destructuring, async/await, modules<br>• Git workflow: branch, merge, rebase</td>
+                                <td>
+                                    • HTML5 semantic elements, accessibility (MDN HTML Basics)<br>
+                                    • CSS3 flexbox, grid, animations (CSS-Tricks Flexbox/Grid Guide)<br>
+                                    • JavaScript ES6+: destructuring, async/await, modules (JavaScript.info)<br>
+                                    • Git workflow: branch, merge, rebase (Pro Git book)
+                                </td>
                                 <td>Landing page responsive cho app học tiếng Anh</td>
-                                <td>Static website với form validation</td>
+                                <td>Static website với form validation, tương thích mọi thiết bị.</td>
                             </tr>
                             <tr>
                                 <td>3-4</td>
                                 <td>TypeScript & DOM</td>
-                                <td>• TypeScript basics: types, interfaces, generics<br>• DOM API: event handling, localStorage<br>• Data structures: Array methods, Set, Map</td>
+                                <td>
+                                    • TypeScript basics: types, interfaces, generics (TypeScript Handbook)<br>
+                                    • DOM API: event handling, localStorage (MDN Web APIs)<br>
+                                    • Data structures: Array methods, Set, Map (JavaScript Data Structures and Algorithms)<br>
+                                    • Asynchronous JS: Promises, Callback Hell, Async/Await sâu hơn.
+                                </td>
                                 <td>Todo App với TypeScript</td>
-                                <td>Type-safe todo application với data persistence</td>
+                                <td>Ứng dụng Todo type-safe với khả năng lưu trữ dữ liệu cục bộ, tìm kiếm/lọc.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -356,7 +366,7 @@
                             <tr>
                                 <th>Tuần</th>
                                 <th>Chủ đề</th>
-                                <th>Kỹ thuật học</th>
+                                <th>Kỹ thuật học & Tài nguyên</th>
                                 <th>Dự án</th>
                                 <th>Deliverable</th>
                             </tr>
@@ -365,16 +375,26 @@
                             <tr>
                                 <td>5-6</td>
                                 <td>React Hooks & State</td>
-                                <td>• React hooks: useState, useEffect, useContext<br>• API integration với Axios<br>• Error boundaries & loading states</td>
+                                <td>
+                                    • React hooks: useState, useEffect, useContext, useRef, useMemo, useCallback (React Docs)<br>
+                                    • API integration với Axios, Fetch API (Axios GitHub)<br>
+                                    • Error boundaries & loading states (React Error Boundaries)<br>
+                                    • Reducer pattern với useReducer.
+                                </td>
                                 <td>Blog Reader với NewsAPI</td>
-                                <td>News reader app với infinite scroll</td>
+                                <td>News reader app với infinite scroll, lazy loading ảnh, và hiển thị trạng thái loading/error.</td>
                             </tr>
                             <tr>
                                 <td>7-8</td>
                                 <td>React Router & Patterns</td>
-                                <td>• React Router v6: nested routes, protected routes<br>• Context API cho global state<br>• Code splitting & lazy loading</td>
-                                <td>E-commerce product listing</td>
-                                <td>SPA với complex navigation</td>
+                                <td>
+                                    • React Router v6: nested routes, protected routes, dynamic routes (React Router Docs)<br>
+                                    • Context API cho global state, so sánh với Redux (React Context vs Redux)<br>
+                                    • Code splitting & lazy loading với `React.lazy` và `Suspense`<br>
+                                    • Higher-Order Components (HOC) & Render Props.
+                                </td>
+                                <td>E-commerce product listing SPA</td>
+                                <td>SPA với điều hướng phức tạp, tìm kiếm, lọc sản phẩm, hiển thị chi tiết sản phẩm.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -383,17 +403,17 @@
                 <div class="milestone">
                     <h4>🎯 Milestone Tháng 1-2:</h4>
                     <ul>
-                        <li>Portfolio Website - Trang cá nhân responsive với dark/light mode</li>
-                        <li>Weather Dashboard - Ứng dụng thời tiết với charts và animations</li>
-                        <li>Quiz Game - Game trắc nghiệm với timer và scoring system</li>
-                        <li>Movie Search App - Tìm kiếm phim với TMDB API, infinite scroll</li>
+                        <li>Portfolio Website - Trang cá nhân responsive, dark/light mode, animation CSS.</li>
+                        <li>Weather Dashboard - Ứng dụng thời tiết với charts, animations, lưu trữ lịch sử tìm kiếm.</li>
+                        <li>Quiz Game - Game trắc nghiệm với timer, scoring system, lưu điểm cao cục bộ.</li>
+                        <li>Movie Search App - Tìm kiếm phim với TMDB API, infinite scroll, chi tiết phim.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="phase">
-                <h2><span class="emoji">⚙️</span>GIAI ĐOẠN 2: BACKEND DEVELOPMENT (Tháng 3-4)</h2>
-                
+                <h2><span class="emoji">⚙️</span>GIAI ĐOẠN 2: BACKEND DEVELOPMENT - NODE.JS (Tháng 3-4)</h2>
+
                 <div class="month">
                     <h3>THÁNG 3: Node.js API Development</h3>
                     <table class="week-table">
@@ -401,7 +421,7 @@
                             <tr>
                                 <th>Tuần</th>
                                 <th>Chủ đề</th>
-                                <th>Kỹ thuật học</th>
+                                <th>Kỹ thuật học & Tài nguyên</th>
                                 <th>Dự án</th>
                                 <th>Deliverable</th>
                             </tr>
@@ -410,29 +430,39 @@
                             <tr>
                                 <td>9-10</td>
                                 <td>Express.js Foundation</td>
-                                <td>• Node.js runtime & npm ecosystem<br>• Express.js: middleware, routing, error handling<br>• RESTful API design principles</td>
+                                <td>
+                                    • Node.js runtime & npm ecosystem (Node.js Docs)<br>
+                                    • **Express.js**: middleware (body-parser, cors, morgan), routing, error handling (Express.js Docs)<br>
+                                    • RESTful API design principles (RESTful API Design Handbook)<br>
+                                    • **Event Loop, Streams, Buffer** (Node.js Event Loop)
+                                </td>
                                 <td>User/Product CRUD API</td>
-                                <td>REST API với validation</td>
+                                <td>REST API hoàn chỉnh cho người dùng và sản phẩm với xác thực dữ liệu đầu vào (Joi/Express-validator).</td>
                             </tr>
                             <tr>
                                 <td>11-12</td>
                                 <td>Authentication & Security</td>
-                                <td>• JWT tokens: generation, verification, refresh<br>• Password hashing với bcrypt<br>• Authentication middleware</td>
+                                <td>
+                                    • **JWT tokens**: generation, verification, refresh token strategy (JWT.io)<br>
+                                    • Password hashing với **bcrypt** (bcryptjs npm)<br>
+                                    • Authentication middleware, Protected Routes<br>
+                                    • Hiểu về **CORS, XSS, CSRF** và cách phòng chống (OWASP Top 10)
+                                </td>
                                 <td>Login/Register system</td>
-                                <td>Secure auth API với role-based access</td>
+                                <td>API xác thực an toàn với hệ thống đăng nhập/đăng ký, phân quyền (role-based access control), và bảo vệ API endpoints.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <div class="month">
-                    <h3>THÁNG 4: Database & Real-time</h3>
+                    <h3>THÁNG 4: Database & Real-time với Node.js</h3>
                     <table class="week-table">
                         <thead>
                             <tr>
                                 <th>Tuần</th>
                                 <th>Chủ đề</th>
-                                <th>Kỹ thuật học</th>
+                                <th>Kỹ thuật học & Tài nguyên</th>
                                 <th>Dự án</th>
                                 <th>Deliverable</th>
                             </tr>
@@ -441,16 +471,25 @@
                             <tr>
                                 <td>13-14</td>
                                 <td>Database Integration</td>
-                                <td>• PostgreSQL: schema design, indexing<br>• Prisma ORM: models, migrations, queries<br>• SQL JOIN operations & optimization</td>
+                                <td>
+                                    • **PostgreSQL**: schema design, indexing, constraints (PostgreSQL Docs)<br>
+                                    • **Prisma ORM**: models, migrations, queries (Prisma Docs)<br>
+                                    • SQL JOIN operations & optimization, subqueries (SQLBolt)<br>
+                                    • Database Normalization (1NF, 2NF, 3NF), ACID properties.
+                                </td>
                                 <td>User-Post relationship CRUD</td>
-                                <td>Database-backed API với complex queries</td>
+                                <td>API có khả năng quản lý dữ liệu quan hệ phức tạp (ví dụ: người dùng và bài viết), được hỗ trợ bởi PostgreSQL và tối ưu truy vấn.</td>
                             </tr>
                             <tr>
                                 <td>15-16</td>
                                 <td>Real-time Features</td>
-                                <td>• WebSocket protocol<br>• Socket.io: rooms, broadcasting<br>• Redis: pub/sub, caching</td>
+                                <td>
+                                    • WebSocket protocol: cơ bản và nguyên tắc hoạt động (MDN WebSockets)<br>
+                                    • **Socket.io**: rooms, broadcasting, private messaging (Socket.io Docs)<br>
+                                    • **Redis**: pub/sub, caching, session store, rate limiting (Redis Docs)
+                                </td>
                                 <td>Real-time chat application</td>
-                                <td>Chat app với online presence</td>
+                                <td>Ứng dụng chat thời gian thực với tính năng hiển thị trạng thái online, offline, gửi tin nhắn, tạo phòng chat.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -458,13 +497,13 @@
 
                 <div class="milestone">
                     <h4>🎯 Milestone Tháng 3-4:</h4>
-                    <p>API backend hoàn chỉnh với auth, database, real-time</p>
+                    <p>API backend hoàn chỉnh với xác thực, quản lý database hiệu quả, và tích hợp tính năng real-time.</p>
                 </div>
             </div>
 
             <div class="phase">
                 <h2><span class="emoji">📱</span>GIAI ĐOẠN 3: MOBILE DEVELOPMENT (Tháng 5-6)</h2>
-                
+
                 <div class="month">
                     <h3>THÁNG 5: React Native Foundation</h3>
                     <table class="week-table">
@@ -472,7 +511,7 @@
                             <tr>
                                 <th>Tuần</th>
                                 <th>Chủ đề</th>
-                                <th>Kỹ thuật học</th>
+                                <th>Kỹ thuật học & Tài nguyên</th>
                                 <th>Dự án</th>
                                 <th>Deliverable</th>
                             </tr>
@@ -481,16 +520,25 @@
                             <tr>
                                 <td>17-18</td>
                                 <td>RN Basics & UI</td>
-                                <td>• Expo development environment<br>• React Native components: View, Text, ScrollView<br>• StyleSheet & responsive design<br>• TouchableOpacity & gesture handling</td>
+                                <td>
+                                    • Expo development environment, React Native CLI (Expo Docs)<br>
+                                    • React Native components: View, Text, ScrollView, FlatList, Image<br>
+                                    • StyleSheet & responsive design (Dimensions API, `useWindowDimensions`)<br>
+                                    • TouchableOpacity, Pressable & gesture handling (React Native Gestures)
+                                </td>
                                 <td>Vocabulary Flashcard App</td>
-                                <td>Basic flashcard app với smooth animations</td>
+                                <td>Ứng dụng flashcard cơ bản với giao diện mượt mà, chuyển động (animations) và tương tác người dùng.</td>
                             </tr>
                             <tr>
                                 <td>19-20</td>
                                 <td>Navigation & Persistence</td>
-                                <td>• React Navigation v6: stack, tab, drawer<br>• AsyncStorage: data persistence<br>• Navigation flows & deep linking</td>
+                                <td>
+                                    • React Navigation v6: stack, tab, drawer navigators (React Navigation Docs)<br>
+                                    • AsyncStorage: data persistence (React Native AsyncStorage)<br>
+                                    • Navigation flows & deep linking, authentication flow.
+                                </td>
                                 <td>Login + Profile App</td>
-                                <td>Multi-screen app với user data</td>
+                                <td>Ứng dụng đa màn hình với luồng đăng nhập/đăng ký, hiển thị thông tin người dùng và lưu trữ dữ liệu cục bộ.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -503,7 +551,7 @@
                             <tr>
                                 <th>Tuần</th>
                                 <th>Chủ đề</th>
-                                <th>Kỹ thuật học</th>
+                                <th>Kỹ thuật học & Tài nguyên</th>
                                 <th>Dự án</th>
                                 <th>Deliverable</th>
                             </tr>
@@ -512,16 +560,25 @@
                             <tr>
                                 <td>21-22</td>
                                 <td>State & API Integration</td>
-                                <td>• Zustand: global state management<br>• React Query: server state, caching<br>• Offline-first architecture</td>
+                                <td>
+                                    • Zustand: global state management (Zustand GitHub) (hoặc Redux Toolkit)<br>
+                                    • React Query: server state, caching, background refetching (React Query Docs)<br>
+                                    • Offline-first architecture: Redux Persist, NetInfo.
+                                </td>
                                 <td>Shopping Cart App</td>
-                                <td>E-commerce app với offline support</td>
+                                <td>Ứng dụng e-commerce đơn giản với giỏ hàng, quản lý sản phẩm, có khả năng hoạt động tốt khi không có mạng.</td>
                             </tr>
                             <tr>
                                 <td>23-24</td>
                                 <td>Native Device Features</td>
-                                <td>• Expo Camera: image capture, processing<br>• Push notifications: local & remote<br>• Permissions handling</td>
+                                <td>
+                                    • Expo Camera: image capture, video recording, image processing (Expo Camera)<br>
+                                    • Push notifications: local & remote (Firebase Cloud Messaging/Expo Notifications)<br>
+                                    • Permissions handling: camera, location, storage (Expo Permissions)<br>
+                                    • Tích hợp bản đồ (react-native-maps), truy cập thư viện ảnh.
+                                </td>
                                 <td>Vocab Scanner + Notifications</td>
-                                <td>OCR-based vocabulary app</td>
+                                <td>Ứng dụng quét văn bản để trích xuất từ vựng (OCR-based) và gửi thông báo nhắc nhở học từ.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -529,13 +586,13 @@
 
                 <div class="milestone">
                     <h4>🎯 Milestone Tháng 5-6:</h4>
-                    <p>Mobile app hoàn chỉnh cho iOS & Android</p>
+                    <p>Mobile app hoàn chỉnh cho iOS & Android với các tính năng nâng cao và trải nghiệm người dùng tốt.</p>
                 </div>
             </div>
 
             <div class="phase">
                 <h2><span class="emoji">🔥</span>GIAI ĐOẠN 4: NEXT.JS FULLSTACK (Tháng 7)</h2>
-                
+
                 <div class="month">
                     <h3>THÁNG 7: SEO & Production Web App</h3>
                     <table class="week-table">
@@ -543,7 +600,7 @@
                             <tr>
                                 <th>Tuần</th>
                                 <th>Chủ đề</th>
-                                <th>Kỹ thuật học</th>
+                                <th>Kỹ thuật học & Tài nguyên</th>
                                 <th>Dự án</th>
                                 <th>Deliverable</th>
                             </tr>
@@ -552,26 +609,36 @@
                             <tr>
                                 <td>25-26</td>
                                 <td>Next.js App Router</td>
-                                <td>• Next.js 13+ App Router<br>• Server Components vs Client Components<br>• SSR, SSG, ISR strategies<br>• SEO optimization: metadata, sitemap</td>
+                                <td>
+                                    • Next.js 13+ App Router: `layout.js`, `page.js`, `loading.js`, `error.js` (Next.js Docs)<br>
+                                    • Server Components vs Client Components, Data Fetching (Server Actions, `use` hook)<br>
+                                    • SSR, SSG, ISR strategies & ưu nhược điểm (Next.js Data Fetching)<br>
+                                    • SEO optimization: metadata, sitemap, robot.txt (Next.js SEO).
+                                </td>
                                 <td>Blog học từ vựng</td>
-                                <td>SEO-optimized blog với high performance</td>
+                                <td>Blog được tối ưu SEO, hiệu suất tải trang cao, có khả năng phục vụ static content và dynamic content.</td>
                             </tr>
                             <tr>
                                 <td>27</td>
                                 <td>Authentication & Payment</td>
-                                <td>• NextAuth.js: OAuth providers<br>• Stripe integration: subscriptions, webhooks<br>• Protected routes & server actions</td>
+                                <td>
+                                    • NextAuth.js: OAuth providers (Google, GitHub), Credentials provider (NextAuth.js Docs)<br>
+                                    • Stripe integration: subscriptions, one-time payments, webhooks (Stripe Docs)<br>
+                                    • Protected routes & server actions, middleware.
+                                </td>
                                 <td>SaaS Dashboard</td>
-                                <td>Complete SaaS platform với subscription</td>
+                                <td>Nền tảng SaaS hoàn chỉnh với hệ thống đăng ký, quản lý gói dịch vụ, thanh toán và dashboard người dùng.</td>
                             </tr>
                             <tr>
                                 <td>28</td>
-                                <td>🆕 PWA Integration</td>
-                                <td>• next-pwa config<br>
-                                • manifest.json<br>
-                                • Service Worker offline<br>
-                                • Lighthouse audit</td>
+                                <td>PWA Integration</td>
+                                <td>
+                                    • next-pwa config, `manifest.json` (next-pwa GitHub)<br>
+                                    • Service Worker for offline capabilities, caching strategies (Workbox Docs)<br>
+                                    • Lighthouse audit for PWA, performance, accessibility, SEO.
+                                </td>
                                 <td>Installable Vocab App</td>
-                                <td>Full PWA with offline support & install prompt</td>
+                                <td>Ứng dụng web có thể cài đặt (PWA) với hỗ trợ offline đầy đủ và prompt cài đặt trên thiết bị di động/desktop.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -579,21 +646,21 @@
 
                 <div class="milestone">
                     <h4>🎯 Milestone Tháng 7:</h4>
-                    <p>Production-ready web app với payment system</p>
+                    <p>Production-ready web app với khả năng tối ưu SEO, hệ thống thanh toán và tích hợp PWA.</p>
                 </div>
             </div>
 
             <div class="phase">
-                <h2><span class="emoji">🏭</span>GIAI ĐOẠN 5: JAVA SPRING BOOT (Tháng 8-9)</h2>
-                
+                <h2><span class="emoji">🏭</span>GIAI ĐOẠN 5: JAVA BACKEND (Tháng 8-9)</h2>
+
                 <div class="month">
-                    <h3>THÁNG 8: Spring Boot Foundation</h3>
+                    <h3>THÁNG 8: Java Web Fundamentals (Servlet & JSP)</h3>
                     <table class="week-table">
                         <thead>
                             <tr>
                                 <th>Tuần</th>
                                 <th>Chủ đề</th>
-                                <th>Kỹ thuật học</th>
+                                <th>Kỹ thuật học & Tài nguyên</th>
                                 <th>Dự án</th>
                                 <th>Deliverable</th>
                             </tr>
@@ -601,30 +668,40 @@
                         <tbody>
                             <tr>
                                 <td>29-30</td>
-                                <td>Java OOP & Spring</td>
-                                <td>• Java OOP: inheritance, polymorphism, encapsulation<br>• Spring Boot: auto-configuration, dependency injection<br>• SOLID principles trong thực tế</td>
-                                <td>REST API User/Word Management</td>
-                                <td>Clean architecture Java API</td>
+                                <td>Java Core & Servlet Essentials</td>
+                                <td>
+                                    • **Java OOP**: inheritance, polymorphism, encapsulation, abstraction (Java Oracle Docs)<br>
+                                    • Java Collections Framework (ArrayList, HashMap), Exception Handling<br>
+                                    • **Servlet API**: lifecycle (`init`, `service`, `destroy`), `HttpServletRequest`, `HttpServletResponse`, `doGet()`, `doPost()` (Oracle Servlet Tutorial)<br>
+                                    • Deployment Descriptor (`web.xml`), `ServletContext`, `ServletConfig`, Request Dispatcher.
+                                </td>
+                                <td>Simple User Management Web App</td>
+                                <td>Ứng dụng web Java thuần chỉ với Servlet, thực hiện CRUD cơ bản cho người dùng, hiểu rõ luồng request/response.</td>
                             </tr>
                             <tr>
                                 <td>31-32</td>
-                                <td>JPA & Database</td>
-                                <td>• JPA/Hibernate: entity relationships, lazy loading<br>• JPQL: complex queries, native SQL<br>• Database migrations với Flyway</td>
-                                <td>Learning History CRUD</td>
-                                <td>Complex data model với optimized queries</td>
+                                <td>JSP, JSTL & Database with JDBC</td>
+                                <td>
+                                    • **JSP (JavaServer Pages)**: cú pháp, EL (Expression Language), JSTL (JSP Standard Tag Library) (Oracle JSP Tutorial)<br>
+                                    • Hạn chế sử dụng Scriptlets trong JSP, mô hình MVC (Model-View-Controller) cơ bản.<br>
+                                    • **JDBC (Java Database Connectivity)**: Connection, Statement, PreparedStatement, ResultSet (Oracle JDBC Tutorial)<br>
+                                    • Connection Pooling (Apache DBCP/HikariCP), Basic Transaction Management.
+                                </td>
+                                <td>Blog Post App</td>
+                                <td>Ứng dụng Blog hoàn chỉnh với Servlet, JSP để hiển thị giao diện, và tương tác với database (ví dụ: MySQL/PostgreSQL) thông qua JDBC.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <div class="month">
-                    <h3>THÁNG 9: Security & Microservices</h3>
+                    <h3>THÁNG 9: Spring Boot & Enterprise-Grade API</h3>
                     <table class="week-table">
                         <thead>
                             <tr>
                                 <th>Tuần</th>
                                 <th>Chủ đề</th>
-                                <th>Kỹ thuật học</th>
+                                <th>Kỹ thuật học & Tài nguyên</th>
                                 <th>Dự án</th>
                                 <th>Deliverable</th>
                             </tr>
@@ -632,17 +709,29 @@
                         <tbody>
                             <tr>
                                 <td>33-34</td>
-                                <td>Spring Security</td>
-                                <td>• Spring Security: authentication, authorization<br>• OAuth2/JWT integration<br>• Method-level security</td>
-                                <td>Secure Admin Portal</td>
-                                <td>Enterprise-grade security implementation</td>
+                                <td>Spring Boot Foundation & RESTful API</td>
+                                <td>
+                                    • **Spring Boot**: auto-configuration, Starters (Spring Boot Docs)<br>
+                                    • **Dependency Injection (IoC Container)**, Spring Beans, `@Autowired`<br>
+                                    • **Spring MVC**: `@Controller`, `@RestController`, `@RequestMapping`, `@GetMapping`, `@PostMapping` (Spring MVC Docs)<br>
+                                    • RESTful API design & versioning, Data Validation (`@Valid`, Bean Validation).<br>
+                                    • Unit Testing với JUnit và Mockito cho Spring Controllers/Services.
+                                </td>
+                                <td>User/Word Management REST API</td>
+                                <td>REST API cho ứng dụng từ vựng với Spring Boot, có validation, xử lý lỗi tập trung (`@ControllerAdvice`), và các bài kiểm thử đơn vị.</td>
                             </tr>
                             <tr>
                                 <td>35-36</td>
-                                <td>Microservices Introduction</td>
-                                <td>• Spring Cloud: service registry, API gateway<br>• Circuit breaker pattern<br>• Distributed tracing</td>
-                                <td>Inventory ERP System</td>
-                                <td>Microservices architecture foundation</td>
+                                <td>JPA/Hibernate & Spring Security</td>
+                                <td>
+                                    • **Spring Data JPA/Hibernate**: Entities, Repositories, `@Transactional`, Relationships (One-to-Many, Many-to-Many) (Spring Data JPA Docs)<br>
+                                    • JPQL/Criteria API, Lazy/Eager Loading, N+1 problem.<br>
+                                    • Database Migrations với **Flyway/Liquibase**.<br>
+                                    • **Spring Security**: Authentication (Form-based, Basic Auth, JWT), Authorization (Role-based access control, `@PreAuthorize`) (Spring Security Docs)<br>
+                                    • Password Hashing (BCryptPasswordEncoder), CSRF Protection.
+                                </td>
+                                <td>Secure Learning History API</td>
+                                <td>API với Spring Data JPA để quản lý lịch sử học tập (từ vựng, bài học) và bảo mật bằng Spring Security, bao gồm đăng nhập/đăng ký và phân quyền.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -650,13 +739,13 @@
 
                 <div class="milestone">
                     <h4>🎯 Milestone Tháng 8-9:</h4>
-                    <p>Enterprise Java backend với security & scalability</p>
+                    <p>Enterprise Java backend mạnh mẽ với Spring Boot, khả năng tương tác database hiệu quả thông qua JPA và bảo mật toàn diện.</p>
                 </div>
             </div>
 
             <div class="phase">
                 <h2><span class="emoji">🚀</span>GIAI ĐOẠN 6: DEVOPS & DEPLOYMENT (Tháng 10)</h2>
-                
+
                 <div class="month">
                     <h3>THÁNG 10: Infrastructure & Automation</h3>
                     <table class="week-table">
@@ -664,7 +753,7 @@
                             <tr>
                                 <th>Tuần</th>
                                 <th>Chủ đề</th>
-                                <th>Kỹ thuật học</th>
+                                <th>Kỹ thuật học & Tài nguyên</th>
                                 <th>Dự án</th>
                                 <th>Deliverable</th>
                             </tr>
@@ -673,16 +762,25 @@
                             <tr>
                                 <td>37-38</td>
                                 <td>Containerization</td>
-                                <td>• Docker: Dockerfile optimization, multi-stage builds<br>• Docker Compose: service orchestration<br>• Container networking & volumes</td>
+                                <td>
+                                    • **Docker**: Dockerfile optimization, multi-stage builds (Docker Docs)<br>
+                                    • Docker Compose: service orchestration for multi-container apps (Docker Compose Docs)<br>
+                                    • Container networking & volumes, Docker Hub.
+                                </td>
                                 <td>Multi-service Docker Setup</td>
-                                <td>Containerized application stack</td>
+                                <td>Triển khai toàn bộ ứng dụng (frontend, backend Node.js, backend Java, database) trong môi trường Docker Compose.</td>
                             </tr>
                             <tr>
                                 <td>39-40</td>
                                 <td>CI/CD Pipeline</td>
-                                <td>• GitHub Actions: workflows, environments<br>• Kubernetes: pods, services, deployments<br>• Blue-green deployment strategies</td>
+                                <td>
+                                    • **GitHub Actions**: workflows, environments, secrets (GitHub Actions Docs)<br>
+                                    • Nguyên lý CI/CD, Automated Testing (Unit, Integration, E2E)<br>
+                                    • Giới thiệu **Kubernetes**: pods, services, deployments (Kubernetes Basics)<br>
+                                    • Blue-green deployment, Rolling updates.
+                                </td>
                                 <td>Automated Deployment Pipeline</td>
-                                <td>Complete CI/CD với automated testing</td>
+                                <td>Xây dựng CI/CD pipeline tự động trên GitHub Actions để build, test và deploy ứng dụng lên một cloud service (Heroku/Render/Vercel) hoặc VPS.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -690,13 +788,13 @@
 
                 <div class="milestone">
                     <h4>🎯 Milestone Tháng 10:</h4>
-                    <p>Production deployment với monitoring</p>
+                    <p>Ứng dụng được đóng gói hoàn chỉnh bằng Docker và có quy trình CI/CD tự động, sẵn sàng cho môi trường production.</p>
                 </div>
             </div>
 
             <div class="phase">
                 <h2><span class="emoji">💻</span>GIAI ĐOẠN 7: DESKTOP APPLICATION (Tháng 11-12)</h2>
-                
+
                 <div class="month">
                     <h3>THÁNG 11: Electron Development</h3>
                     <table class="week-table">
@@ -704,7 +802,7 @@
                             <tr>
                                 <th>Tuần</th>
                                 <th>Chủ đề</th>
-                                <th>Kỹ thuật học</th>
+                                <th>Kỹ thuật học & Tài nguyên</th>
                                 <th>Dự án</th>
                                 <th>Deliverable</th>
                             </tr>
@@ -713,16 +811,26 @@
                             <tr>
                                 <td>41-42</td>
                                 <td>Electron Foundation</td>
-                                <td>• Electron architecture: main/renderer processes<br>• IPC communication<br>• File system access & OS integration</td>
+                                <td>
+                                    • Electron architecture: main/renderer processes, `contextBridge` (Electron Docs)<br>
+                                    • IPC communication (`ipcMain`, `ipcRenderer`)<br>
+                                    • File system access (`fs` module) & OS integration (`shell`, `dialog`, `clipboard`)<br>
+                                    • Native UI components (menus, trays).
+                                </td>
                                 <td>Desktop Vocabulary App</td>
-                                <td>Cross-platform desktop app</td>
+                                <td>Ứng dụng từ vựng desktop cross-platform với giao diện người dùng dựa trên web, có thể đọc/ghi từ file.</td>
                             </tr>
                             <tr>
                                 <td>43-44</td>
-                                <td>Java Integration</td>
-                                <td>• Embedded Java server<br>• Process management<br>• HTTP communication between Electron & Java</td>
+                                <td>Java Integration (Client-side)</td>
+                                <td>
+                                    • Embedded Java server (Jetty/Netty) hoặc Spring Boot Microservice nhúng.<br>
+                                    • Process management: spawn Java process từ Electron (Node.js `child_process`)<br>
+                                    • HTTP communication between Electron & Java (Axios/Fetch API từ Electron renderer)<br>
+                                    • JNI (Java Native Interface) - chỉ giới thiệu, không đi sâu.
+                                </td>
                                 <td>CRUD + Sync Application</td>
-                                <td>Desktop app với local Java backend</td>
+                                <td>Ứng dụng desktop với backend Java local (nhúng hoặc chạy riêng), cho phép CRUD dữ liệu và đồng bộ hóa với cloud API nếu có mạng.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -735,7 +843,7 @@
                             <tr>
                                 <th>Tuần</th>
                                 <th>Chủ đề</th>
-                                <th>Kỹ thuật học</th>
+                                <th>Kỹ thuật học & Tài nguyên</th>
                                 <th>Dự án</th>
                                 <th>Deliverable</th>
                             </tr>
@@ -744,16 +852,24 @@
                             <tr>
                                 <td>45-46</td>
                                 <td>Advanced Features</td>
-                                <td>• Apache POI: Excel/Word manipulation<br>• Report generation: PDF, charts<br>• Data import/export workflows</td>
+                                <td>
+                                    • Apache POI: Excel/Word manipulation (Apache POI Docs)<br>
+                                    • Report generation: PDF (iText/Apache PDFBox), charts (JFreeChart/JGraphT)<br>
+                                    • Data import/export workflows, Batch processing.
+                                </td>
                                 <td>Advanced Reporting System</td>
-                                <td>Business intelligence features</td>
+                                <td>Hệ thống báo cáo desktop có khả năng tạo, chỉnh sửa các loại tài liệu văn phòng và biểu đồ phức tạp từ dữ liệu.</td>
                             </tr>
                             <tr>
                                 <td>47-48</td>
                                 <td>Build & Distribution</td>
-                                <td>• Electron Builder: packaging, installer<br>• Code signing certificates<br>• Auto-update mechanism</td>
+                                <td>
+                                    • Electron Builder: packaging for Windows, macOS, Linux (Electron Builder Docs)<br>
+                                    • Code signing certificates, Notarization (macOS)<br>
+                                    • Auto-update mechanism (Electron Updater).
+                                </td>
                                 <td>Production Desktop App</td>
-                                <td>Installable desktop application</td>
+                                <td>Ứng dụng desktop hoàn chỉnh, có thể cài đặt, tự động cập nhật, sẵn sàng phân phối cho người dùng cuối.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -761,8 +877,10 @@
 
                 <div class="milestone">
                     <h4>🎯 Milestone Tháng 11-12:</h4>
-                    <p>Desktop app với offline capabilities</p>
+                    <p>Ứng dụng desktop mạnh mẽ với khả năng offline, tích hợp các tính năng doanh nghiệp và quy trình phân phối chuyên nghiệp.</p>
                 </div>
             </div>
+        </div>
+    </div>
 </body>
 </html>
